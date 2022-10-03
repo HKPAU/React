@@ -4,7 +4,7 @@ class CategoryList extends Component {
     render() {
         return (
             <div>
-                <h3>Category List Component</h3>
+                <h3>Category List Component Has</h3>
             </div>
         );
     }
