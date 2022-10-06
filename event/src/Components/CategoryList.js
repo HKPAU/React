@@ -22,14 +22,14 @@ class CategoryList extends Component {
                 <ListGroup>
                     {
                         this.state.categories.map(category => (
-                            <ListGroupItem onClick={() => this.changeCategory(category)} key={category.id}>
+                            <ListGroupItem onClick={() => this.props.changeCategory(category)} key={category.id}>
                                 {category.name}
                             </ListGroupItem>
                         ))
                     }
                 </ListGroup>
                 <div className="mt-4">
-                    <h4>{this.props.addingCat.title}</h4>
+                    <h4>{this.props.currentCategory}</h4>
                 </div>
             </div>
         );

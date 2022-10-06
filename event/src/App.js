@@ -5,27 +5,27 @@ import ProductList from "./Components/ProductList";
 import {Component} from "react";
 
 
-export class App extends Component{
-  ProductListVal = {title: "Product List", title_id: 1};
-  CategoryListVal = {title: "Category List", title_id: 2};
-
-  addingCat = {title: "Hasan Kacar"};
+export default class App extends Component{
+  state = {currentCategory:""};
 
   changeCategory = category => {
-    this.setState({adding_category_name: "Hasan Kacar's Category Name - " + category.id});
+    this.setState({adding_category_name: category.name + " - " + category.id});
   }
 
   render() {
+    let ProductListVal = {title: "Product List", title_id: 1};
+    let CategoryListVal = {title: "Category List", title_id: 2};
+
     return (
         <div>
           <Container>
             <Row>
               <Col xs="4" className="mt-5">
-                <ProductList info={this.ProductListVal}/>
+                <ProductList info={ProductListVal}/>
               </Col>
 
               <Col xs="8" className="mt-5">
-                <CategoryList addingCat={this.addingCat} changeCategory={this.changeCategory} info={this.CategoryListVal}/>
+                <CategoryList currentCategory={this.state.currentCategory} changeCategory={this.changeCategory} info={CategoryListVal}/>
               </Col>
             </Row>
           </Container>
@@ -34,4 +34,4 @@ export class App extends Component{
   }
 }
 
-export default App;
+/*export default App;*/
