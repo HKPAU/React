@@ -1,12 +1,12 @@
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from "reactstrap";
 import CategoryList from "./Components/CategoryList";
 import ProductList from "./Components/ProductList";
-import {Component} from "react";
 
 
 export default class App extends Component{
-  state = {currentCategory:""};
+  state = {currentCategory:"Hasan Kacar"};
 
   changeCategory = category => {
     this.setState({adding_category_name: category.name + " - " + category.id});
