@@ -5,9 +5,10 @@ class ProductList extends Component {
     render() {
         return (
             <div>
+                <div><h3>{this.props.info.title}</h3></div>
                 <ListGroup>
                     <ListGroupItem>
-                        <b>{this.props.info.title}</b>
+                        Cras justo odio
                     </ListGroupItem>
                     <ListGroupItem>
                         Dapibus ac facilisis in
