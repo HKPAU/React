@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Macbook Air M1",
+      "price": "18000₺"
+    },
+    {
+      "id": 2,
+      "categoryId": 2,
+      "productName": "Macbook PRO M1",
+      "price": "20000₺"
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "productName": "Macbook PRO M2",
+      "price": "22000₺"
+    },
+    {
+      "id": 4,
+      "categoryId": 3,
+      "productName": "Macbook PRO MAX M1",
+      "price": "24000₺"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Air"
+    },
+    {
+      "id": 2,
+      "categoryName": "PRO"
+    },
+    {
+      "id": 3,
+      "categoryName": "PRO MAX"
+    }
+  ]
+}
