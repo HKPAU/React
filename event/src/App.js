@@ -9,7 +9,7 @@ export default class App extends Component{
   state = {currentCategory:"Hasan Kacar"};
 
   changeCategory = category => {
-    this.setState({adding_category_name: category.name + " - " + category.id});
+    this.setState({currentCategory: category.name + " - " + category.id});
   }
 
   render() {
