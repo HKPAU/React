@@ -6,13 +6,12 @@ class Products extends Component {
         products: []
     }
 
-    componentDidMount() {
-        this.getProducts();
-    }
+/*    getProducts = (categoryId) => {
+        let url = "http://localhost:3000/products";
+        url += "?categoryId=" + categoryId;
+        fetch(url).then(response => response.json()).then(data => this.setState({products: data}))
+    }*/
 
-    getProducts = () => {
-        fetch("http://localhost:3000/products").then(response => response.json()).then(data => this.setState({products: data}))
-    }
     render() {
         return (
             <div>
@@ -34,8 +33,8 @@ class Products extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.products.map(product => (
-                            <tr>
+                        {this.props.products.map(product => (
+                            <tr key={product.id}>
                                 <th scope="row">
                                     {product.id}
                                 </th>
