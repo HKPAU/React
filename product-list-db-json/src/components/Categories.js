@@ -17,14 +17,14 @@ class Categories extends Component {
                 <div>
                     <ListGroup>
                         {this.props.categories.map(category => (
-                            <ListGroupItem key={category.id} onClick={() => this.props.selected_category(category)}>
+                            <ListGroupItem active={category.id===this.props.currentCategory?true:false} key={category.id} onClick={() => this.props.selected_category(category)}>
                                 <b>{category.id} : </b>{category.categoryName}
                             </ListGroupItem>
                         ))}
                     </ListGroup>
                 </div>
 
-                <div><b>Category : </b> <span>{this.props.currentCategory}</span></div>
+                <div><b>Category : </b> <span>{this.props.selected_category_name}</span></div>
             </div>
         );
     }

@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/React" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/redux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/redux/React" vcs="Git" />
   </component>
 </project>
